@@ -1,6 +1,14 @@
 'use strict';
+function triple(single) {
+    var result = single * 3;
+
+    return result;
+}
+
 var map_to_three_multiples = function(collections){
-  return [3,9,15,12,27];
+    var _ = require('../../lodash');
+    var result = _.map(collections,triple);
+    return result ;
 };
 
 module.exports = map_to_three_multiples;

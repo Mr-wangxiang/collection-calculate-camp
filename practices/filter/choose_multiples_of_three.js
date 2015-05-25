@@ -3,12 +3,8 @@
 function choose_multiples_of_three(collection) {
 
   //在这里写入代码
-  var result = [];
-  for (var i = 0; i < collection.length; i++) {
-     if (collection[i]%3 == 0) {
-         result.push(collection[i]);
-     }
-  }
+  var _ = require('../../lodash');
+  var result = _.remove(collection, function(n) { return n % 3 == 0; });
   return result;
 }
 

@@ -12,6 +12,7 @@ function choose_no_common_elements(collection_a, collection_b) {
   //     }
   // }
   // return result;
+  var _ = require('../../lodash');
   var result = _.xor(collection_a, collection_b);
   return result ;
 }

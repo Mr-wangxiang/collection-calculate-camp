@@ -1,5 +1,4 @@
 'use strict';
-function
 function collect_all_even(collection) {
   //在这里写入代码
   var result = [];

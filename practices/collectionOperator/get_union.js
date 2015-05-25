@@ -5,6 +5,7 @@ function get_union(collection_a, collection_b) {
   var _ = require('../../lodash');
   var result = _.difference(collection_b, collection_a);
   result = collection_a.concat(result);
+  return result;
 }
 
 module.exports = get_union;

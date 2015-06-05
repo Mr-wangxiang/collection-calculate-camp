@@ -1,5 +1,16 @@
 'use strict';
+var _ = require('../../../mylodash/array.js');
+
 function one_add_next_multiply_three(collection){
-  return [12,24,36,48,60,72,84,96,108,120];
+    var result = [];
+    _.each(collection, function (element, i) {
+        if (i !== collection.length -1) {
+            for (var j = i; j < collection.length; j++) {
+                result.push((element + collection[j+1])* 3);
+                break;
+            }
+        }
+    });
+  return result;
 }
 module.exports = one_add_next_multiply_three;

@@ -7,11 +7,11 @@ describe('calculate_average_spec', function () {
 
     it('集合个数为偶数时，算平均数', function () {
         var result = calculate_average(collection_a);
-        expect(result).toEqual(4);
+        expect(result).toEqual(3.5);
     });
 
     it('集合个数为奇数时，算平均数', function () {
         var result = calculate_average(collection_b);
-        expect(result).toEqual(12);
+        expect(result).toEqual(5);
     });
 });

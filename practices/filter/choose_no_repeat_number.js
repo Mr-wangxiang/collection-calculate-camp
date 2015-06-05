@@ -1,20 +1,19 @@
 'use strict';
-
 function choose_no_repeat_number(collection) {
 
   //在这里写入代码
-//   /var result = [];
-//   for (var i = 0; i < collection.length; i++) {
-//
-//     if (result.indexOf(collection[i]) == -1)
-//
-// 		result.push(collection[i]);
-//   }
-//   return result;
-    var _ = require('../../lodash');
-
-    var result = _.uniq(collection);
-    return result;
+  var _ = require('../../mylodash/array.js');
+  var result = [];
+  _.each(collection,function(element){
+      if (!_.exist(result,element)) {
+          result.push(element);
+      }
+  });
+  return result;
+    // var _ = require('../../lodash');
+    //
+    // var result = _.uniq(collection);
+    // return result;
  }
 
 module.exports = choose_no_repeat_number;

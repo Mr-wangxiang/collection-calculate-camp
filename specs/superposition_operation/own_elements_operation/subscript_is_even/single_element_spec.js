@@ -8,7 +8,7 @@ describe('single_element_spec', function () {
 
     it('下标为偶数的元素中，选出不重复的元素', function () {
         var result = single_element(collection_a);
-        expect(result).toEqual([2,6, 43, 5]);
+        expect(result).toEqual([6, 43, 5]);
     });
 
     it('下标为偶数的元素中，不存在3', function () {
